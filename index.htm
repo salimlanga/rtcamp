@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Example</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css" >
+  <link rel="stylesheet" href="css/CenterModeSlider.css">
+  <link rel="stylesheet" href="css/style.css" >
+<style> 
+body{
+	font-family: "Arial MT";
+	font-size: 16px;
+}
+
+.SectionTopNav .navbar-light{
+	background-color:#e6c36e !important;		
+}
+.dropdown-item, .nav-item .nav-link{
+ font-family: "Arial Bold MT";
+ color: #000000;
+}
+/*.SectionTopNav .active{
+	background-color: #c8a551 !important;
+}*/
+.navbar-light .navbar-nav .active>.nav-link{
+color: #ffffff;
+}
+.SectionTopHeader .bg-light{
+	background-color: #eeeaeb !important;
+}
+
+ @media (min-width: 320px ){
+.SectionTopNav .navbar{
+
+}
+.SectionTopNav li a{
+	padding: .7rem !important;
+}
+}
+@media (min-width: 768px ){
+	padding: 0px !important;
+	}
+.SectionTopHeader .breadcrumb{
+	background-color: transparent !important;
+	    margin-bottom: 0px;
+	flex-direction: row-reverse;
+}
+.SectionTopHeader .breadcrumb-item+.breadcrumb-item::after {
+    display: inline-block;
+    padding-right: .5rem;
+	padding-left: .5rem;
+    color: #6c757d;
+    content: "|" !important;
+}
+.SectionTopHeader .breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0rem;
+    color: #6c757d;
+    content: none !important;
+}
+
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+.SectionBanner .col-md-4{
+	background-color: #eeeaeb !important;
+}
+.SectionBanner .col-md-4 h3{
+	 color:#c8a551 !important;
+	 margin: 1rem auto;
+}
+  .readmore {
+	 color:#c8a551 !important;
+}
+.text img{
+	border: 7px solid #CACACA;
+}
+
+.leftLst, .rightLst  {
+    line-height: 33px;
+    height: 40px;
+    width: 40px;
+	background-color: #e6c36e;	
+}
+span.carousel-control-prev-icon, span.carousel-control-next-icon {
+    position: relative;
+    left: -3px;
+}
+.SectionThumbSlider .pad15{
+	background: #cac3b3 !important;
+	position: relative;
+}
+.pad15 img{
+height: 116px !important; }
+	
+.custbtn:not(:disabled):not(.disabled).active,
+.custbtn:not(:disabled):not(.disabled):active, 
+.show>.custbtn{
+    color: #fff;
+    background-color: #cac3b3;
+    border-color: #cac3b3;
+}
+.custbtn,
+.custbtn:not(:disabled):not(.disabled):active, {
+    color: #fff;
+    background-color: #cac3b3;
+    border-color: #cac3b3;
+}
+.custbtn:hover {
+    color: #fff;
+    background-color: #c8a551;
+    border-color: #cac3b3;
+}
+.custbtn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(200,165,81,.5);
+}
+.pad15 span img {
+    position: absolute;
+    top: calc(50% - 20px);
+    height: 40px !important;
+    width: 40px;
+    opacity: 0.7;
+    left: calc(50% - 20px);
+}
+.pad15 span img:hover {
+	opacity: 1;
+}
+.time .hour, 
+.minute, 
+.second{
+
+    background: transparent !important;
+    color: #050505 !important;
+    font-size: 30px;
+    font-family: roboto;
+}
+.SectionFooter{
+	background-color: #e6c36e;
+}
+.SectionWebSocket{
+	background-color: #947f4b;
+}
+.SectionBanner h3, 
+.SectionFooter h3{
+	margin-bottom: 0px;
+    line-height: unset;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: "Droid Sarif";
+}
+.title h3 {
+    margin-bottom: 0px;
+    line-height: unset;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: "Droid Sarif";
+}
+.title {
+    background-color: #f4eede;
+    border-left: 4px solid #e6c36e;
+    padding: 3px 6px;
+    margin-bottom: 15px;
+}
+.SectionFooter ul,
+.SectionGlimpsesExh ul {
+	    list-style-image: url(images/BulletArrow.png);
+}
+#facebook ._2p3a {
+	width: 100% !important;}
+</style>
+
+</head>
+<body>
+<section class="SectionTopHeader">
+<nav class="navbar navbar-expand-md bg-light navbar-light">
+ <div class="container" >
+ 
+    <div class="col-md-8">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#"><img src="images/sitelogo.png" width="237" height="67" alt=""/></a>
+  </div>
+  <div class="col-md-4 pr-md-0" >
+   <nav aria-label="breadcrumb">
+   <ol class="breadcrumb text-right pr-md-0" >
+    <li class="breadcrumb-item">Contact Us</li>
+    <li class="breadcrumb-item" >Home</li>
+    <br><br>
+    <input type="text" class="form-control" placeholder="Search here">
+   </ol>
+  </nav>
+  
+
+  </div>
+  </div>
+  </nav>
+</section>
+<section class="SectionTopNav">
+<nav class="navbar navbar-expand-lg navbar-light">  
+ <div class="container p-0" >
+ <div class="row">
+ <!-- Brand -->
+  <a class="navbar-brand" href="#"></a>
+    <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+ 
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">PARTICIPANTS</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">ABOUT</a>
+    </li>
+       <li class="nav-item">
+      <a class="nav-link" href="#">EXHIBITION PROGRAM</a>
+    </li>
+    
+       <li class="nav-item">
+      <a class="nav-link" href="#">MEDIA</a>
+    </li>
+    
+       <li class="nav-item">
+      <a class="nav-link" href="#">TRAVEL GUIDE</a>
+    </li>
+       <li class="nav-item">
+      <a class="nav-link" href="#">SPONSERSHIP</a>
+    </li>
+
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        GUIDELINES
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">GUIDELINES 1</a>
+        <a class="dropdown-item" href="#">GUIDELINES 2</a>
+        <a class="dropdown-item" href="#">GUIDELINES 3</a>
+      </div>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">VISITORS CORNER</a>
+    </li>
+  </ul>
+  </div>
+</div>
+</div>
+</nav>
+</section>
+
+<!--container start-->
+<div class="container">
+<section class="SectionBanner" >
+<div class="row">
+<div class="col-md-8 p-0">
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/LA.jpg" alt="Los Angeles" class="img-fluid" >
+    </div>
+    <div class="carousel-item">
+      <img src="images/chicago1.jpg" alt="Chicago" class="img-fluid" >
+    </div>
+    <div class="carousel-item">
+      <img src="images/newyork1.jpg" alt="New York"  class="img-fluid">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+<div class="col-md-4" >
+<h3>Welcome to rtPanel</h3>
+<div class="text" >
+<img src="images/welcomenote-default-user-img.jpg" width="100" height="115" alt="" class="mr-3 mb-1" style="float:left;" /> Vel adipiscing lectus lundium. Dapibus amet turpis adipiscing ridiculus porta, aenean tempor phasellus cras ultrices urna, ut in turpis auctor, dignissim odio porttitor mus egestas dapibus diam urna phasellus! Amet adipiscing enim, odio odio? Massa eros, ut pulvinar magnis dis, penatibus urna est penatibus turpis egestas non pulvinar, ac lectus sit, habitasse etiam nisi sed habitasse, risus nisi, amet etiam? Pulvinar dis ac vel! <br><a href="#" class="readmore" >Read More</a></div>
+</div>
+</div>
+</section>
+<div class="divider" ><hr></div>
+<section class="SectionThumbSlider">
+<div class="row">
+<div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+            <div class="MultiCarousel-inner">
+                <div class="item">
+                  <div class="pad15">
+                    <img src="images/Layer2.png" class="img-fluid"  width="173" height="116" alt=""/>
+                    <span><img src="images/right.png" width="25" height="25" alt=""/></span>                    
+                   </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                     <img src="images/Layer3.png" class="img-fluid"  width="173" height="116" alt=""/>
+                     <span><img src="images/right.png" width="25" height="25" alt=""/></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <img src="images/Layer4.png" class="img-fluid"  width="173" height="116" alt=""/>
+                        <span><img src="images/right.png" width="25" height="25" alt=""/></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                       <img src="images/Layer5.png" class="img-fluid"  width="173" height="116" alt=""/>
+                       <span><img src="images/right.png" width="25" height="25" alt=""/></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                       <img src="images/Layer6.png" class="img-fluid"  width="173" height="116" alt=""/>
+                       <span><img src="images/right.png" width="25" height="25" alt=""/></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <img src="images/Layer2.png" class="img-fluid"  width="173" height="116" alt=""/>
+                        <span><img src="images/right.png" width="25" height="25" alt=""/></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <img src="images/Layer3.png" class="img-fluid"  width="173" height="116" alt=""/>
+                        <span><img src="images/right.png" width="25" height="25" alt=""/></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <img src="images/Layer4.png" class="img-fluid"  width="173" height="116" alt=""/>
+                        <span><img src="images/right.png" width="25" height="25" alt=""/></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <img src="images/Layer5.png" class="img-fluid"  width="173" height="116" alt=""/>
+                        <span><img src="images/right.png" width="25" height="25" alt=""/></span>
+                    </div>
+                </div>
+               </div>
+            <button class="btn btn-primary1 leftLst custbtn"><span class="carousel-control-prev-icon"></span></button>
+            <button class="btn btn-primary1 rightLst custbtn"><span class="carousel-control-next-icon"></span></button>
+        </div>
+</div>
+</section>
+<div class="divider" ><hr></div>
+
+
+<section class="SectionGlimpsesExh">
+<div class="row">
+<div class="col-md-8">
+<div class="title"><h3>Glimpses of Exhibition</h3></div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="col-md-3 p-2">
+<img src="images/glimse-img1.jpg" class="img-fluid w-100 img-thumbnail" width="142" height="105" alt=""/>
+<label for="">Golf</label>
+</div>
+<div class="col-md-3 p-2"><img src="images/glimse-img2.jpg" class="img-fluid w-100 img-thumbnail" width="142" height="105" alt=""/>
+<label for="">BasketBall</label>
+</div>
+<div class="col-md-3 p-2"><img src="images/glimse-img3.jpg" class="img-fluid w-100 img-thumbnail" width="142" height="105" alt=""/>
+<label for="">Tennis</label>
+</div>
+<div class="col-md-3 p-2"><img src="images/glimse-img4.jpg" class="img-fluid w-100 img-thumbnail" width="142" height="105" alt=""/>
+<label for="">FootBall</label>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3 p-2"><img src="images/glimse-img5.jpg" class="img-fluid w-100 img-thumbnail" width="142" height="105" alt=""/>
+<label for="">FootBall</label>
+</div>
+<div class="col-md-3 p-2"><img src="images/glimse-img6.jpg" class="img-fluid w-100 img-thumbnail" width="142" height="105" alt=""/>
+<label for="">Tennis</label>
+</div>
+<div class="col-md-3 p-2"><img src="images/glimse-img7.jpg" class="img-fluid w-100 img-thumbnail" width="142" height="105" alt=""/>
+<label for="">BasketBall</label>
+</div>
+<div class="col-md-3 p-2"><img src="images/glimse-img8.jpg" class="img-fluid w-100 img-thumbnail" width="142" height="105" alt=""/>
+<label for="">Golf</label></div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="title"><h3>News</h3></div>
+<div class="row">
+<div class="col-md-4 pr-md-0"><img src="images/news-default-img.jpg" class="img-fluid img-thumbnail "  width="92" height="67" alt=""/></div>
+<div class="col-md-8 pl-md-0"><strong> The exhibition will be organized to be the perfect forum.</strong> </div>
+</div>
+<div class="row">
+  <ul class="mt-3">
+  <li>Website coming soon.</li>
+  <li>Best sport photogrpher award.</li>
+  <li>Educational worshop and meeting.</li>
+  <li>Website coming soon.</li>
+  <li>Best sport photogrpher award.</li>
+  <li>Educational worshop and meeting.</li>
+  </ul>
+  
+</div>
+</div>
+</div>
+</section>
+<div class="divider" ><hr></div>
+<section class="SectionAPI">
+<div class="row">
+<div class="col-md-4">
+<div class="title"><h3>Latest Tweets</h3></div>
+<div  style="max-height: 390px !important; overflow: auto;" >
+<a class="twitter-timeline" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div> 
+<div class="col-md-4">
+<div class="title"><h3>Follow us On Facebook</h3></div>
+<div  style="max-height: 390px !important;" >
+<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=350px&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="100%" height="390px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+</div>
+</div>
+<div class="col-md-4">
+<div class="title"><h3>Wheater</h3></div>
+  <div class="row">
+
+<a class="weatherwidget-io" href="https://forecast7.com/en/18d5273d86/pune/" data-label_1="PUNE" data-label_2="WEATHER" data-font="Roboto" data-icons="Climacons Animated" data-days="3" data-theme="blue-mountains" style=" width: 91% !important; margin:auto; margin-bottom: 15px" >PUNE WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+  </div>
+  
+    <div class="title"><h3>Date and Time</h3></div>
+  <div class="row dateandtime">
+  <div style="text-align:center;padding:1em 0; margin:auto;"> <a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/1259229"><span style="color:gray;"></span></a> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Asia%2FKolkata" width="100%" height="90" frameborder="0" seamless></iframe> </div>
+  
+  
+  </div>
+</div>
+</div>
+</section>
+<div class="divider" ><hr></div>
+
+<section class="SectionPartner">
+<div class="title"><h3>Our Partners</h3></div>
+<div class="row">
+<div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+            <div class="MultiCarousel-inner">
+                <div class="item">
+                  <div class="pad15">
+                    <img src="images/partner-img1.jpg" class="img-fluid"  width="173" height="116" alt=""/>
+                                       
+                   </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                     <img src="images/partner-img2.jpg" class="img-fluid"  width="173" height="116" alt=""/>
+                     </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <img src="images/partner-img3.jpg" class="img-fluid"  width="173" height="116" alt=""/>
+                        </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                       <img src="images/partner-img4.jpg" class="img-fluid"  width="173" height="116" alt=""/>
+                       </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                       <img src="images/partner-img5.jpg" class="img-fluid"  width="173" height="116" alt=""/>
+                       </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <img src="images/partner-img1.jpg" class="img-fluid"  width="173" height="116" alt=""/>
+                        </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <img src="images/partner-img2.jpg" class="img-fluid"  width="173" height="116" alt=""/>
+                        </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <img src="images/partner-img3.jpg" class="img-fluid"  width="173" height="116" alt=""/>
+                        </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                        <img src="images/partner-img4.jpg" class="img-fluid"  width="173" height="116" alt=""/>
+                        </div>
+                </div>
+               </div>
+            <button class="btn btn-primary1 leftLst custbtn"><span class="carousel-control-prev-icon"></span></button>
+            <button class="btn btn-primary1 rightLst custbtn"><span class="carousel-control-next-icon"></span></button>
+        </div>
+</div>
+</section>
+<div class="divider" ><hr></div>
+
+</div><!--container end-->
+
+<section class="SectionFooter py-3 ">
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+<h3>Pages</h3>
+<hr>
+<ul>
+<li>Home</li>
+<li>About</li>
+<li>Participants</li>
+<li>Exhibition Program</li>
+<li>Media</li>
+</ul> 
+</div>
+<div class="col-md-4">
+<h3>Important Links</h3>
+<hr>
+<ul>
+<li>www.rtcamp.com</li>
+<li>www.devilsworkshop.org</li>
+<li>www.rtpanel,com</li>
+<li>www.bloggertowp.com</li>
+<li>www.wpngnix.com</li>
+</ul>
+</div>
+<div class="col-md-4">
+<div class="row">
+  <img src="images/footer-logo.jpg" class="img-fluid mx-auto my-2" width="237" height="67" alt=""/> </div>
+  <p class="text-center">Copyrigths © 2012. All rights reserved.</p>
+  <p class="text-center">Terms of Use | Privacy Policy | Designed by rtCamp</p>
+</div>
+</div>
+</div>
+
+</section>
+
+<section class="SectionWebSocket p-y">
+<div class="container">
+<div class="row">
+<div class="p-2 small text-white"><strong>Disclaimer:</strong> Sit arcu nec cras elit? Vut sagittis magna nisi vel integer arcu? Dis pulvinar scelerisque pulvinar rhoncus integer, integer in? Ac, cum etiam tortor duis placerat mid nunc cras integer, aliquam porttitor. Dis pulvinar scelerisque pulvinar rhoncus integer, integer in? Ac, cum etiam tortor duis placerat mid nunc cras integer, aliquam porttitor.</div> 	
+</div>
+</div>
+
+</section>
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript"  src="js/popper.min.js"></script>
+  <script type="text/javascript"  src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/CenterModeSlider.js"></script>
+</body>
+</html>
